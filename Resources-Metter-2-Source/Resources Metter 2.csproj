@@ -1,0 +1,282 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Resources_Metter_2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationIcon>Resources\icon-32px.ico</ApplicationIcon>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Content\icon-32px.ico" />
+    <None Remove="Content\LHM\Aga.Controls.dll" />
+    <None Remove="Content\LHM\Aga.Controls.pdb" />
+    <None Remove="Content\LHM\BlackSharp.Core.dll" />
+    <None Remove="Content\LHM\de\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\DiskInfoToolkit.dll" />
+    <None Remove="Content\LHM\es\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\fr\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\HidSharp.dll" />
+    <None Remove="Content\LHM\it\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\ja\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\LibreHardwareMonitor.exe" />
+    <None Remove="Content\LHM\LibreHardwareMonitor.exe.config" />
+    <None Remove="Content\LHM\LibreHardwareMonitorLib.dll" />
+    <None Remove="Content\LHM\LibreHardwareMonitorLib.pdb" />
+    <None Remove="Content\LHM\LibreHardwareMonitorLib.xml" />
+    <None Remove="Content\LHM\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Remove="Content\LHM\Microsoft.Bcl.HashCode.dll" />
+    <None Remove="Content\LHM\Microsoft.Win32.TaskScheduler.dll" />
+    <None Remove="Content\LHM\OxyPlot.dll" />
+    <None Remove="Content\LHM\OxyPlot.WindowsForms.dll" />
+    <None Remove="Content\LHM\pl\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\RAMSPDToolkit-NDD.dll" />
+    <None Remove="Content\LHM\ru\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\sv\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\System.Buffers.dll" />
+    <None Remove="Content\LHM\System.CodeDom.dll" />
+    <None Remove="Content\LHM\System.Collections.Immutable.dll" />
+    <None Remove="Content\LHM\System.Formats.Nrbf.dll" />
+    <None Remove="Content\LHM\System.IO.Pipelines.dll" />
+    <None Remove="Content\LHM\System.Memory.dll" />
+    <None Remove="Content\LHM\System.Numerics.Vectors.dll" />
+    <None Remove="Content\LHM\System.Reflection.Metadata.dll" />
+    <None Remove="Content\LHM\System.Resources.Extensions.dll" />
+    <None Remove="Content\LHM\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Remove="Content\LHM\System.Security.AccessControl.dll" />
+    <None Remove="Content\LHM\System.Security.Principal.Windows.dll" />
+    <None Remove="Content\LHM\System.Text.Encodings.Web.dll" />
+    <None Remove="Content\LHM\System.Text.Json.dll" />
+    <None Remove="Content\LHM\System.Threading.AccessControl.dll" />
+    <None Remove="Content\LHM\System.Threading.Tasks.Extensions.dll" />
+    <None Remove="Content\LHM\tr\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\LHM\zh-Hant\Microsoft.Win32.TaskScheduler.resources.dll" />
+    <None Remove="Content\PawnIO_setup.exe" />
+    <None Remove="Content\PawnIO_setup_2.0.1.exe" />
+    <None Remove="Content\tray-icon-normal.ico" />
+    <None Remove="Content\tray-icon-pinned.ico" />
+    <None Remove="Resources\arrow-blue-icon.png" />
+    <None Remove="Resources\arrow-green-icon.png" />
+    <None Remove="Resources\arrow-icon-black.png" />
+    <None Remove="Resources\arrow-purple-icon.png" />
+    <None Remove="Resources\arrow-red-icon.png" />
+    <None Remove="Resources\clock-icon.png" />
+    <None Remove="Resources\cpu-fan-icon.png" />
+    <None Remove="Resources\cpu-icon.png" />
+    <None Remove="Resources\cpu-tdp-icon.png" />
+    <None Remove="Resources\gpu-card-icon.png" />
+    <None Remove="Resources\gpu-card-icon2.png" />
+    <None Remove="Resources\gpu-card-tdp-icon.png" />
+    <None Remove="Resources\gpu-fan-icon.png" />
+    <None Remove="Resources\gpu-ram-icon.png" />
+    <None Remove="Resources\hdd-icon-black.png" />
+    <None Remove="Resources\icon-128px.png" />
+    <None Remove="Resources\icon-256px.png" />
+    <None Remove="Resources\icon-32px.ico" />
+    <None Remove="Resources\icon-32px.png" />
+    <None Remove="Resources\icon-64px.png" />
+    <None Remove="Resources\pum-icon.png" />
+    <None Remove="Resources\pump-icon.png" />
+    <None Remove="Resources\ram-icon.png" />
+    <None Remove="Resources\roboto-black.ttf" />
+    <None Remove="Resources\roboto-medium.ttf" />
+    <None Remove="Resources\roboto-regular.ttf" />
+    <None Remove="Resources\running-tasks-1.gif" />
+    <None Remove="Resources\running-tasks-2.gif" />
+    <None Remove="Resources\tray-icon-normal.ico" />
+    <None Remove="Resources\tray-icon-pinned.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Content\LHM\Aga.Controls.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\Aga.Controls.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\BlackSharp.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\de\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\DiskInfoToolkit.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\es\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\fr\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\HidSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\it\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\ja\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\LibreHardwareMonitor.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\LibreHardwareMonitor.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\LibreHardwareMonitorLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\LibreHardwareMonitorLib.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\LibreHardwareMonitorLib.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\Microsoft.Bcl.AsyncInterfaces.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\Microsoft.Bcl.HashCode.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\Microsoft.Win32.TaskScheduler.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\OxyPlot.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\OxyPlot.WindowsForms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\pl\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\RAMSPDToolkit-NDD.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\ru\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\sv\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Buffers.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.CodeDom.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Collections.Immutable.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Formats.Nrbf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.IO.Pipelines.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Memory.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Numerics.Vectors.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Reflection.Metadata.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Resources.Extensions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Runtime.CompilerServices.Unsafe.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Security.AccessControl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Security.Principal.Windows.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Text.Encodings.Web.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Text.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Threading.AccessControl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\System.Threading.Tasks.Extensions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\tr\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\LHM\zh-Hant\Microsoft.Win32.TaskScheduler.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\PawnIO_setup_2.0.1.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\tray-icon-normal.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\tray-icon-pinned.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\icon-32px.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoroutinesForWpf" Version="0.3.0" />
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="TaskScheduler" Version="2.12.2" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\arrow-blue-icon.png" />
+    <Resource Include="Resources\arrow-green-icon.png" />
+    <Resource Include="Resources\arrow-icon-black.png" />
+    <Resource Include="Resources\arrow-purple-icon.png" />
+    <Resource Include="Resources\arrow-red-icon.png" />
+    <Resource Include="Resources\clock-icon.png" />
+    <Resource Include="Resources\cpu-fan-icon.png" />
+    <Resource Include="Resources\cpu-icon.png" />
+    <Resource Include="Resources\cpu-tdp-icon.png" />
+    <Resource Include="Resources\gpu-card-icon.png" />
+    <Resource Include="Resources\gpu-card-icon2.png" />
+    <Resource Include="Resources\gpu-card-tdp-icon.png" />
+    <Resource Include="Resources\gpu-fan-icon.png" />
+    <Resource Include="Resources\gpu-ram-icon.png" />
+    <Resource Include="Resources\hdd-icon-black.png" />
+    <Resource Include="Resources\icon-128px.png" />
+    <Resource Include="Resources\icon-256px.png" />
+    <Resource Include="Resources\icon-32px.png" />
+    <Resource Include="Resources\icon-64px.png" />
+    <Resource Include="Resources\pump-icon.png" />
+    <Resource Include="Resources\ram-icon.png" />
+    <Resource Include="Resources\roboto-black.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\roboto-medium.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\roboto-regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\running-tasks-1.gif" />
+    <Resource Include="Resources\running-tasks-2.gif" />
+  </ItemGroup>
+
+</Project>

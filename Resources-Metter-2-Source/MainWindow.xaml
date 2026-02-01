@@ -1,0 +1,213 @@
+﻿<Window x:Class="Resources_Metter_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:Resources_Metter_2"
+        mc:Ignorable="d"
+        Title="Resources Metter 2" Icon="/Resources/icon-32px.png" ResizeMode="NoResize" ShowInTaskbar="False" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Background="Transparent" WindowStyle="None" AllowsTransparency="True">
+    <Grid x:Name="root">
+        <Border x:Name="bg" BorderBrush="#FF578FA2" CornerRadius="4,4,4,4" Background="#E5FFFFFF" BorderThickness="1,1,1,1">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,4,4,4" Orientation="Horizontal">
+                <Image Width="16" Source="/Resources/cpu-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Border BorderBrush="#FF868686" BorderThickness="1" Width="16" Height="16" Margin="2,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ProgressBar x:Name="cpuUsageProgressBar" Value="50" Orientation="Vertical" BorderThickness="0,0,0,0" BorderBrush="#FF868686" ToolTip="CPU Usage" Foreground="#FF008BA5" Cursor="Hand"/>
+                </Border>
+                <TextBlock x:Name="cpuTempTxt" Text="00º" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" Margin="2,-1,0,0" ToolTip="CPU Temperature in ºC" Opacity="0.75" Width="24" Height="16"/>
+                <Image Width="16" Source="/Resources/cpu-tdp-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="cpuTdpTxt" Text="200w" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" Margin="2,-1,0,0" ToolTip="CPU TDP in Watts" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Height="16" Width="37"/>
+                <Image x:Name="pumpImg" Width="16" Source="/Resources/pump-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="pumpTxt" Text="3000rpm" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="Water Cooler Pump RPM or SYS_FAN_X_PUMP RPM" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="61" Height="16"/>
+                <Image Width="16" Source="/Resources/cpu-fan-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="cpuFanTxt" Text="3000rpm" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="CPU Fan RPM. If the CPU_OPT is connected, show a average between CPU_FAN and CPU_OPT" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="61" Height="16"/>
+                <Image Width="16" Source="/Resources/ram-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="180"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Border BorderBrush="#FF868686" BorderThickness="1" Width="16" Height="16" Margin="4,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ProgressBar x:Name="ramUsageProgressBar" Value="50" Orientation="Vertical" BorderThickness="0,0,0,0" BorderBrush="#FF868686" ToolTip="RAM Usage" Foreground="#FF008BA5" Cursor="Hand"/>
+                </Border>
+                <Rectangle Height="20" Width="1" StrokeThickness="0" Margin="16,-5,16,-5" Fill="#FF005F7F" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.35"/>
+                <Image Width="16" Source="/Resources/gpu-card-icon2.png" RenderTransformOrigin="0.5,0.5" Height="16" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Border BorderBrush="#FF868686" BorderThickness="1" Width="16" Height="16" Margin="4,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ProgressBar x:Name="gpuUsageProgressBar" Value="50" Orientation="Vertical" BorderThickness="0,0,0,0" BorderBrush="#FF868686" ToolTip="GPU Usage" Foreground="#FF008BA5" Cursor="Hand"/>
+                </Border>
+                <TextBlock x:Name="gpuTempTxt" Text="00º" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="GPU Temperature in ºC" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="24" Height="16"/>
+                <Image Width="16" Source="/Resources/gpu-card-tdp-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="gpuTdpTxt" Text="200w" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="CPU TDP in Watts" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="37" Height="16"/>
+                <Image Width="16" Source="/Resources/gpu-fan-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="gpuFanTxt" Text="3000rpm" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="GPU Fan RPM. Is a average between GPU_FAN_1, GPU_FAN_2 and GPU_FAN_3. Only the Fans that exists, is considered in this average calculation!" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="61" Height="16"/>
+                <Image Width="16" Source="/Resources/gpu-ram-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" Margin="6,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Border BorderBrush="#FF868686" BorderThickness="1" Width="16" Height="16" Margin="4,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ProgressBar x:Name="vramUsageProgressBar" Value="50" Orientation="Vertical" BorderThickness="0,0,0,0" BorderBrush="#FF868686" ToolTip="VRAM Usage" Foreground="#FF008BA5" Cursor="Hand"/>
+                </Border>
+                <TextBlock x:Name="vramTempTxt" Text="00º" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="GPU Memory Junction Temperature in ºC" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="24" Height="16"/>
+                <Rectangle Height="20" Width="1" StrokeThickness="0" Fill="#FF005F7F" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,-5,16,-5" Opacity="0.35"/>
+                <Image Width="16" Source="/Resources/hdd-icon-black.png" RenderTransformOrigin="0.5,0.5" Height="16" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Border BorderBrush="#FF868686" BorderThickness="1" Height="16" Margin="4,0,0,0" Width="16" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ProgressBar x:Name="diskUsageProgressBar" Value="50" Orientation="Vertical" BorderThickness="0,0,0,0" BorderBrush="#FF868686" ToolTip="Disk Usage" Foreground="#FF008BA5" Cursor="Hand"/>
+                </Border>
+                <Rectangle Height="20" Width="1" StrokeThickness="0" Fill="#FF005F7F" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,-5,16,-5" Opacity="0.35"/>
+                <Grid Width="16" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="180"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Source="/Resources/arrow-icon-black.png" RenderTransformOrigin="0.5,0.5" Opacity="0.75">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image x:Name="downloadAccent" Source="/Resources/arrow-green-icon.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+                <TextBlock x:Name="downloadTxt" Text="00.0 MB/s" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="Main network adapter Download speed in Mb/s" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Height="16" Width="70"/>
+                <Grid Width="16" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2,0,0,0">
+                    <Image Source="/Resources/arrow-icon-black.png" RenderTransformOrigin="0.5,0.5" Opacity="0.75">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image x:Name="uploadAccent" Source="/Resources/arrow-purple-icon.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+                <TextBlock x:Name="uploadTxt" Text="00.0 MB/s" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="Main network adapter Upload speed in Mb/s" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Height="16" Width="70"/>
+                <Rectangle Height="20" Width="1" StrokeThickness="0" Fill="#FF005F7F" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="4,-5,16,-5" Opacity="0.35"/>
+                <Image Width="16" Source="/Resources/clock-icon.png" RenderTransformOrigin="0.5,0.5" Height="16" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="sysTimeTxt" Text="00:00" FontFamily="{DynamicResource RobotoMedium}" FontSize="15" ToolTip="System Time" Margin="2,-1,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.75" Width="38" Height="16"/>
+            </StackPanel>
+        </Border>
+        <Grid x:Name="loadIndicator" Visibility="Collapsed">
+            <Border BorderThickness="1,1,1,1" Background="#E5FFFFFF" BorderBrush="#FF578FA2" CornerRadius="4,4,4,4"/>
+            <Image gif:ImageBehavior.AnimatedSource="/Resources/running-tasks-1.gif" gif:ImageBehavior.AnimationSpeedRatio="1.5" HorizontalAlignment="Center" Width="16" Height="16" VerticalAlignment="Center" Opacity="0.75"/>
+        </Grid>
+
+    </Grid>
+</Window>
