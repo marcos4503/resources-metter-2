@@ -24,7 +24,7 @@ You need to fulfill some requirements to be able to use this Software...
 
 This software was developed using Visual Studio and the C# language. It was created with the intention of being completely free to use and also anyone can modify it if they want. The idea is that this is a free, ad-free, simple and useful software, where it is possible to consult in real time information about the GPU, CPU, RAM, Storage etc, data such as temperature, percentage of use and other things.
 
-This project uses the library "LibreHardwareMonitorLib" to obtain the temperature and uses of hardware informations. You can refer to <a href="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" target="_blank">this</a> link for more details about the library.
+This project uses the library "LibreHardwareMonitorLib" with "PawnIO" to obtain the temperature and uses of hardware informations. You can refer to <a href="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" target="_blank">this</a> link for more details about the library.
 
 # How to edit this Software
 
